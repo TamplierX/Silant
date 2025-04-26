@@ -1,0 +1,109 @@
+@import 'normalize.css';
+@import 'variables.css';
+@import 'fonts.css';
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+#root {
+    position: relative;
+    z-index: 0;
+}
+
+body {
+    font-family: 'PT-Astra-Sans', sans-serif;
+}
+
+img,
+svg {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+}
+
+button {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    table-layout: auto;
+    width: max-content;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+thead {
+    color: var(--color-blue);
+    border: 3px solid var(--color-blue);
+}
+
+thead th {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+tbody::before {
+    content: '';
+    display: block;
+    height: 10px;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid var(--color-blue);
+    width: max-content;
+}
+
+td {
+    white-space: nowrap;
+}
+
+tbody > tr:nth-child(odd) {
+    background-color: var(--color-light-yellow);
+}
+
+hr {
+    border: 1px solid var(--color-blue);
+}

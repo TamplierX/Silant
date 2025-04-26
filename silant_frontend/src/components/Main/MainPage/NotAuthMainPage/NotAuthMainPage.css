@@ -1,0 +1,28 @@
+.search__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.search__title-text {
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--color-blue);
+}
+
+@media (width <= 875px) {
+    .search__title-text {
+        font-size: 32px;
+    }
+}
+
+@media (width <= 500px) {
+    .search__title-text {
+        font-size: 26px;
+    }
+
+    .search__title {
+        padding-bottom: 30px;
+    }
+}

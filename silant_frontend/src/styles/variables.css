@@ -1,0 +1,10 @@
+:root {
+    /* colors */
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-light-yellow: #ebe6d6;
+    --color-red: #d20a11;
+    --color-blue: #163e6c;
+    --color-light-blue: rgba(22, 62, 108, 0.1);
+    --color-grey: #c9c9c9;
+}

@@ -1,0 +1,357 @@
+@import './styles/default.css';
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main {
+    flex: 1;
+}
+
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.page__container {
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sb__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.sb__title {
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--color-blue);
+    padding-bottom: 15px;
+}
+
+.sb__text {
+    align-self: center;
+    font-size: 28px;
+    font-weight: normal;
+    font-style: italic;
+    padding: 15px 0;
+    color: var(--color-blue);
+}
+
+.sb__header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 15px;
+}
+
+.sb__header-navbar {
+    display: flex;
+    justify-content: start;
+    gap: 15px;
+    padding: 15px 0;
+}
+
+.sb__header-navbar-btn {
+    padding: 5px 10px;
+    background-color: var(--color-light-yellow);
+    border: 1px solid var(--color-black);
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.sb__header-navbar-btn:hover {
+    background-color: var(--color-blue);
+    color: var(--color-white);
+}
+
+.sb__header-item {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.sb__header-text {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.sb__header-value {
+    font-size: 26px;
+    font-style: italic;
+}
+
+.sb__navbar-container {
+    padding: 10px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 250px));
+    column-gap: 50px;
+    row-gap: 15px;
+    justify-content: center;
+}
+
+.sb__navbar-btn {
+    padding: 5px 10px;
+    border: 1px solid var(--color-black);
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.sb__navbar-btn:hover {
+    background-color: var(--color-light-yellow);
+}
+
+.sb__navbar-custom-btn {
+    padding: 5px 30px;
+}
+
+.sb__navbar-current-btn {
+    background-color: var(--color-blue);
+    color: var(--color-white);
+}
+
+.sb__navbar-current-btn:disabled {
+    cursor: initial;
+    background-color: var(--color-blue);
+}
+
+.sb__filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.sb__filters_label {
+    font-size: 22px;
+    color: var(--color-blue);
+    padding-right: 10px;
+}
+
+.sb__result-section {
+    margin-top: 15px;
+}
+
+.sb__table-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.sb__table-container {
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.sb__link-row {
+    cursor: pointer;
+}
+
+.sb__link-row:hover {
+    background-color: var(--color-light-blue);
+}
+
+.details__container {
+    display: flex;
+    margin: 15px 0;
+    gap: 10px;
+}
+
+.details__private-container {
+    width: minmax(320px, 100%);
+    flex-shrink: 0;
+    background: var(--color-light-yellow);
+    padding: 10px;
+}
+
+.details__private-item {
+    margin-bottom: 10px;
+}
+
+.details__private-title {
+    font-weight: bold;
+    padding-bottom: 3px;
+}
+
+.details__private-value {
+    font-style: italic;
+    padding-left: 15px;
+}
+
+.details__public-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 10px;
+    flex-grow: 1;
+    min-width: 0;
+}
+
+.details__public-item {
+    background: var(--color-light-blue);
+    padding: 10px;
+    text-align: left;
+}
+
+.details__public-item-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.details__public-item-header-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.details__public-item-title {
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.details__public-item-image {
+    align-self: center;
+    margin-right: 10px;
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.details__public-item-img {
+    width: 100%;
+    height: 100%;
+}
+
+.details__public-item-body {
+    font-style: italic;
+}
+
+.edit__container {
+    display: flex;
+    margin: 50px 0;
+    justify-content: center;
+}
+
+.edit-form-grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 350px);
+    column-gap: 50px;
+    row-gap: 15px;
+    margin-bottom: 15px;
+}
+
+.edit__form-flex-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.edit__form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.edit__form-label {
+    font-weight: bold;
+}
+
+.edit__form-input {
+    height: 43px;
+    width: 100%;
+    padding: 0 15px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid var(--color-black);
+}
+
+.edit__form-textarea {
+    height: 129px;
+    width: 100%;
+    padding: 10px 15px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid var(--color-black);
+    resize: none;
+}
+
+.edit__form-buttons {
+    margin-top: 30px;
+    display: flex;
+    gap: 50px;
+    justify-content: end;
+}
+
+.edit__form-btn {
+    padding: 10px 15px;
+    background-color: var(--color-blue);
+    border-radius: 5px;
+    color: var(--color-white);
+    opacity: 0.8;
+}
+
+.edit__form-cancel-btn {
+    width: 103px;
+    padding: 10px auto;
+    background-color: var(--color-red);
+}
+
+.edit__form-btn:hover {
+    opacity: 1;
+}
+
+.edit__form-error {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.edit__form-error-text {
+    font-size: 20px;
+    color: var(--color-red);
+}
+
+@media (width <= 875px) {
+    .edit__container {
+        display: flex;
+        flex-direction: column;
+        margin: 50px 0;
+        justify-content: center;
+    }
+
+    .edit-form-grid-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (width <= 800px) {
+    .details__container {
+        flex-direction: column;
+    }
+}
+
+@media (width <= 750px) {
+    .page__container {
+        padding: 30px;
+    }
+}
+
+@media (width <= 500px) {
+    .page__container {
+        padding: 30px 10px;
+    }
+
+    .sb__header-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (width <= 450px) {
+    .sb__filters {
+        flex-direction: column;
+    }
+}
